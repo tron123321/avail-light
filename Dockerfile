@@ -31,4 +31,3 @@ COPY --from=builder /app/avail-light /usr/local/bin
 
 EXPOSE 80 443 7001 37000
 CMD ["/bin/bash", "-c", "while true; do /usr/local/bin/avail-light -c /app/config.yaml; sleep 20; done"]
-ftr
